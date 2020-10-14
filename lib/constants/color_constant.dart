@@ -9,3 +9,4 @@ const mBorderColour = Color(0xFFE8E8F3);
 const mFillColour = Color(0xFFFFFFFF);
 const mCardTitleColour = Color(0xFF2E4ECF);
 const mCardSubtitleColour = mTitleColour;
+const mCardGradientColour = mTitleColour;

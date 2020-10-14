@@ -42,8 +42,8 @@ class _BottomNavigationTravelkuyState extends State<BottomNavigationTravelkuy> {
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: _selectedindex == 0
-                ? new SvgPicture.asset('assets/icons/home.svg')
-                : new SvgPicture.asset('assets/icons/home_colored.svg'),
+                ? Icon(Icons.home, color: mBlueColour, size: 24.0)
+                : Icon(Icons.home, size: 24.0),
             title: Text(
               'Home',
               style: bottomTextStyle,
@@ -51,10 +51,28 @@ class _BottomNavigationTravelkuyState extends State<BottomNavigationTravelkuy> {
           ),
           BottomNavigationBarItem(
             icon: _selectedindex == 1
-                ? new SvgPicture.asset('assets/icons/home.svg')
-                : new SvgPicture.asset('assets/icons/home_colored.svg'),
+                ? Icon(Icons.list, color: mBlueColour, size: 24.0)
+                : Icon(Icons.list, size: 24.0),
             title: Text(
-              'Home',
+              'My Order',
+              style: bottomTextStyle,
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: _selectedindex == 2
+                ? Icon(Icons.watch_later, color: mBlueColour, size: 24.0)
+                : Icon(Icons.watch_later, size: 24.0),
+            title: Text(
+              'Watch List',
+              style: bottomTextStyle,
+            ),
+          ),
+          BottomNavigationBarItem(
+            icon: _selectedindex == 3
+                ? Icon(Icons.account_box, color: mBlueColour, size: 24.0)
+                : Icon(Icons.account_box, size: 24.0),
+            title: Text(
+              'Account',
               style: bottomTextStyle,
             ),
           ),
