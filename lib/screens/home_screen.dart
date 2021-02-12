@@ -7,7 +7,6 @@ import 'package:travelkuy/models/carousel_model.dart';
 import 'package:travelkuy/models/popular_destination_model.dart';
 import 'package:travelkuy/models/travlog_model.dart';
 import 'package:travelkuy/widgets/bottom_navigation_travelkuy.dart';
-import 'package:flutter/src/rendering/box.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -373,18 +372,11 @@ class _HomeScreenState extends State<HomeScreen> {
                             Container(
                               height: 104,
                               decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(8),
-                                  image: DecorationImage(
-                                      image: AssetImage(travlogs[index].image),
-                                      fit: BoxFit.cover),
-                                  gradient: LinearGradient(
-                                    colors: [
-                                      mCardGradientColour,
-                                      mSubtitleColour
-                                    ],
-                                    begin: Alignment.topLeft,
-                                    end: Alignment.bottomRight,
-                                  )),
+                                borderRadius: BorderRadius.circular(8),
+                                image: DecorationImage(
+                                    image: AssetImage(travlogs[index].image),
+                                    fit: BoxFit.cover),
+                              ),
                             ),
                             Positioned(
                               bottom: 8,
